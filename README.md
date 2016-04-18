@@ -4,7 +4,7 @@ Convert Samsung S-Health exported data to tcx-format
 ## Prerequisites
 You need to put s-health in "Developer mode".
 
-Go to developer.samsung.com/health and download the Samsung Digital Health SDK
+Go to <http://developer.samsung.com/health> and download the Samsung Digital Health SDK
 
 Extract the files and read the ProgrammingGuide_SHealthService.pdf to find out how to put S Health into "Developer Mode"
 
