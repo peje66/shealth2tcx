@@ -12,4 +12,4 @@ From the Healthdata / tools install the DataViewer-1.2.0.apk to get the dataview
 
 Transfer the exported data to your computer.
 
-Than run php shealth2tcx.php path to your exported com.samsung.health.exercise.{date}.csv
+Then run `php shealth2tcx.php path/to/your/exported/com.samsung.health.exercise.{date}.csv`
