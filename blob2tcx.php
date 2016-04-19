@@ -39,8 +39,9 @@ function element_with_attributes($dom, $parent, $element_name, $attributes) {
 
 function blob2tcx($dirname, $mode, $meta)
 {
+    echo $meta['start_time'], " - ", $meta['end_time'];
     if (!array_key_exists('location_data', $meta) || !strlen($meta['location_data'])) {
-        echo "no location data to decode\n";
+        echo " no location data to decode\n";
         return;
     }
     $name = $dirname.'/blobs/'.$mode.'/'.$meta['location_data'];
@@ -104,6 +105,7 @@ function blob2tcx($dirname, $mode, $meta)
 
 //     header("Content-Type: text/xml");
     file_put_contents(basename($meta['location_data']).'.tcx', $dom_tcx->saveXML());
+    echo " created: ", basename($meta['location_data']).'.tcx', "\n";
 }
 ?>
 
